@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Discount Calculator</title>
+	</head>
+	<body>
+		<div class="discount_container">
+			<h1>Discount Calculator</h1>
+			<form action="#">
+				<div class="input-item">
+					<label for="bill"> Enter bill amount: </label>
+					<input type="text" id="bill" />
+				</div>
+
+				<div class="input-item">
+					<label for="percentage">Select discount %</label>
+					<select name="percentage" id="percentage">
+						<option value="0">0</option>
+						<option value="10">10</option>
+						<option value="15">15</option>
+						<option value="20">20</option>
+						<option value="25">25</option>
+						<option value="50">50</option>
+					</select>
+				</div>
+
+				<div class="input-item">
+					<label for="discount"> Discount amount: </label>
+					<input type="text" id="discount" disabled />
+				</div>
+
+				<div class="input-item">
+					<label for="total"> Total Amount:</label>
+					<input type="text" id="total" disabled />
+				</div>
+				<div class="btns">
+					<button type="submit" class="calculate">Calculate</button>
+					<button type="reset" class="reset">Reset</button>
+				</div>
+			</form>
+			<div id="iamadev">
+				<a href="https://github.com/devAbdulsalam"
+					><p>!<span>Your</span>regular<span>Dev</span>.js</p>
+				</a>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

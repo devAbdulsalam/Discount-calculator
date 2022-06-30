@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+     box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial;
+    min-height: 100vh;
+    background:#03245e;
+    display: flex;
+    place-items: center;
+}
+.discount_container {
+    width: min(500px, 90%);
+    margin: 0 auto;
+    padding: 1.5em 2em;
+    background: rgba(247, 243, 243, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(5, 16, 167, 0.6);
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+}
+h1 {
+    text-align: center;
+    margin-top: 0;
+    color: white;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.input-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+label {
+    font-size: 1.25rem;
+    width: 100%;
+}
+input {
+    margin: 1em 0;
+    padding: 0.5em 0.75em;
+    width: 100%;
+    background:none;
+    border: none;
+    color: black;
+    border-bottom: 3px solid #141E30;
+    font-size: 15px;
+    font-weight: bold;
+}
+input:focus {
+    outline: none;
+    background: none;
+}
+select {
+    margin: 1em 0;
+    width: 100%;
+    padding: 0.5em 0.75em;
+
+}
+
+button {
+    margin-top: 2rem;
+    padding: 0.8em 0;
+    width: 100%;
+    color: white;
+    font-weight: 700;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+button:hover {
+    opacity: 0.7;
+}
+.calculate {
+    background: #095dfa;
+}
+
+.reset{
+    background: #fc5406;
+    
+}
+
+
+/* my trademark */
+#iamadev {
+    cursor: pointer;
+    margin-top: 2rem;
+    width: 100%;
+    font-weight: bolder;
+    text-align: center;
+    bottom: 0%;
+}
+
+#iamadev p {
+    color: red;
+    font-size: 20px;
+    padding: 5px;
+}
+
+#iamadev span {
+    color: blue;
+}
+
+
+@media (max-width: 450px) {
+    .input-item {
+        flex-direction: column;
+    }
+    .btns {
+        display: flex;
+        justify-content: space-between;
+    }
+    button{
+        margin: 10px;
+    }
+}
